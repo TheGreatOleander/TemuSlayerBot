@@ -1,14 +1,24 @@
+modules = ["python-3.12"]
+run = "python3 main.py"
+
 [nix]
 channel = "stable-24_05"
 
+[deployment]
+run = ["sh", "-c", "python3 main.py"]
+
 [workflows]
-runButton = "Run Bot"
+runButton = "Run Python App"
 
 [[workflows.workflow]]
-name = "Run Bot"
-author = 44049889
+name = "Run Python App"
+author = 44051958
 mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "python main.py"
+args = "python3 main.py"
+
+[[ports]]
+localPort = 5000
+externalPort = 9000
