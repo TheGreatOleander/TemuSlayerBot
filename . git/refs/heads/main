@@ -1,6 +1,1 @@
-0000000000000000000000000000000000000000 5b1587e8e5c99e25090fd6883b96fdd2bbc076c8 Joe Rogan <44051958-joerogan4201354@users.noreply.replit.com> 1750398910 +0000	commit (initial): Initial commit
-5b1587e8e5c99e25090fd6883b96fdd2bbc076c8 4192c2c1ba54b066c5ce8a266f51dba386642592 joerogan4201354 <44051958-joerogan4201354@users.noreply.replit.com> 1750398978 +0000	commit: Checkpoint before assistant change: Configure the project to run correctly using Python 3.12
-4192c2c1ba54b066c5ce8a266f51dba386642592 03f57c823b1b9e6b18a384a841fabd34c9d96610 Joe Rogan <44051958-joerogan4201354@users.noreply.replit.com> 1750399021 +0000	commit: Assistant checkpoint: Create main.py and configure Run button
-03f57c823b1b9e6b18a384a841fabd34c9d96610 144c1d37d13467c5e91db6b36fe9f78adb0cd820 Joe Rogan <44051958-joerogan4201354@users.noreply.replit.com> 1750399124 +0000	commit: Assistant checkpoint: Create Flask web application
-144c1d37d13467c5e91db6b36fe9f78adb0cd820 c08a0188385ededdd4a330e3a124cce6d12629df joerogan4201354 <44051958-joerogan4201354@users.noreply.replit.com> 1750399510 +0000	commit: Checkpoint before assistant change: Set up a web framework and external port for accepting user data
-c08a0188385ededdd4a330e3a124cce6d12629df ff8bc7379d421bdbdafa347c03a1e5dda92d91e8 Joe Rogan <44051958-joerogan4201354@users.noreply.replit.com> 1750399560 +0000	commit: Assistant checkpoint: Create multi-platform API credential manager
+ff8bc7379d421bdbdafa347c03a1e5dda92d91e8
