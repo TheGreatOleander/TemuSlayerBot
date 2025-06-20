@@ -1,0 +1,109 @@
+2025-06-20 06:20:35,517 - semgrep.notifications - WARNING - METRICS: Using configs from the Registry (like --config=p/ci) reports pseudonymous rule metrics to semgrep.dev.
+To disable Registry rule metrics, use "--metrics=off".
+Using configs only from local files (like --config=xyz.yml) does not enable metrics.
+
+More information: https://semgrep.dev/docs/metrics
+
+2025-06-20 06:20:35,519 - semgrep.run_scan - DEBUG - semgrep version 1.4.0
+2025-06-20 06:20:35,524 - semgrep.config_resolver - DEBUG - Loading local config from /home/runner/workspace/.config/.semgrep/semgrep_rules.json
+2025-06-20 06:20:35,526 - semgrep.config_resolver - DEBUG - Done loading local config from /home/runner/workspace/.config/.semgrep/semgrep_rules.json
+2025-06-20 06:20:35,530 - semgrep.config_resolver - DEBUG - Saving rules to /tmp/semgrep-5zqwui9e.rules
+2025-06-20 06:20:36,259 - semgrep.rule_lang - DEBUG - semgrep-core validation response: valid=True
+2025-06-20 06:20:36,259 - semgrep.rule_lang - DEBUG - semgrep-core validation succeeded
+2025-06-20 06:20:36,259 - semgrep.rule_lang - DEBUG - RPC validation succeeded
+2025-06-20 06:20:36,260 - semgrep.config_resolver - DEBUG - loaded 1 configs in 0.736417293548584
+2025-06-20 06:20:36,336 - semgrep.run_scan - VERBOSE - running 714 rules from 1 config /home/runner/workspace/.config/.semgrep/semgrep_rules.json_0
+2025-06-20 06:20:36,337 - semgrep.run_scan - VERBOSE - No .semgrepignore found. Using default .semgrepignore rules. See the docs for the list of default ignores: https://semgrep.dev/docs/cli-usage/#ignore-files
+2025-06-20 06:20:36,339 - semgrep.run_scan - VERBOSE - Rules:
+2025-06-20 06:20:36,339 - semgrep.run_scan - VERBOSE - <SKIPPED DATA (too many entries; use --max-log-list-entries)>
+2025-06-20 06:20:36,427 - semgrep.core_runner - DEBUG - Passing whole rules directly to semgrep_core
+2025-06-20 06:20:36,508 - semgrep.core_runner - DEBUG - Running Semgrep engine with command:
+2025-06-20 06:20:36,508 - semgrep.core_runner - DEBUG - /tmp/_MEIcRcWIA/semgrep/bin/opengrep-core -json -rules /tmp/tmp4td0le8k.json -j 8 -targets /tmp/tmpk0y402rk -timeout 5 -timeout_threshold 3 -max_memory 0 -fast
+2025-06-20 06:20:38,145 - semgrep.core_runner - DEBUG - --- semgrep-core stderr ---
+[00.07][[34mINFO[0m]: Executed as: /tmp/_MEIcRcWIA/semgrep/bin/opengrep-core -json -rules /tmp/tmp4td0le8k.json -j 8 -targets /tmp/tmpk0y402rk -timeout 5 -timeout_threshold 3 -max_memory 0 -fast
+[00.07][[34mINFO[0m]: Version: 1.4.0
+[00.07][[34mINFO[0m]: Parsing rules in /tmp/tmp4td0le8k.json
+[00.58][[34mINFO[0m]: scan: processing 9 files (skipping 0), with 526 rules (skipping 0 )
+--- end semgrep-core stderr ---
+2025-06-20 06:20:38,154 - semgrep.rule_match - DEBUG - match_key = ('', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = ee6562019833e1f8c3f061d413e69eded90d24c137f124ac4e78ca81971b27008fc04bd7d9074c6fa147edb3f56ee1396bd3d240b4e6cda1eaaf561e76993c86_0
+2025-06-20 06:20:38,155 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,157 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,159 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,160 - semgrep.rule_match - DEBUG - match_key = ('', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = ee6562019833e1f8c3f061d413e69eded90d24c137f124ac4e78ca81971b27008fc04bd7d9074c6fa147edb3f56ee1396bd3d240b4e6cda1eaaf561e76993c86_0
+2025-06-20 06:20:38,161 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,162 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,163 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_1
+2025-06-20 06:20:38,164 - semgrep.rule_match - DEBUG - match_key = ('', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = ee6562019833e1f8c3f061d413e69eded90d24c137f124ac4e78ca81971b27008fc04bd7d9074c6fa147edb3f56ee1396bd3d240b4e6cda1eaaf561e76993c86_0
+2025-06-20 06:20:38,165 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,166 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,167 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_2
+2025-06-20 06:20:38,168 - semgrep.rule_match - DEBUG - match_key = ('', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = ee6562019833e1f8c3f061d413e69eded90d24c137f124ac4e78ca81971b27008fc04bd7d9074c6fa147edb3f56ee1396bd3d240b4e6cda1eaaf561e76993c86_0
+2025-06-20 06:20:38,169 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,170 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,171 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_3
+2025-06-20 06:20:38,172 - semgrep.rule_match - DEBUG - match_key = ('', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = ee6562019833e1f8c3f061d413e69eded90d24c137f124ac4e78ca81971b27008fc04bd7d9074c6fa147edb3f56ee1396bd3d240b4e6cda1eaaf561e76993c86_0
+2025-06-20 06:20:38,173 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,174 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,175 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_4
+2025-06-20 06:20:38,175 - semgrep.rule_match - DEBUG - match_key = ('', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = ee6562019833e1f8c3f061d413e69eded90d24c137f124ac4e78ca81971b27008fc04bd7d9074c6fa147edb3f56ee1396bd3d240b4e6cda1eaaf561e76993c86_0
+2025-06-20 06:20:38,176 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,177 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_0
+2025-06-20 06:20:38,178 - semgrep.rule_match - DEBUG - match_key = ('flask.render_template_string(...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.render-template-string') match_id = 68c7b590302825733cbddcbcb1b156726947d01e1180ca574f8a162f13ea01337ec95b25e75625dce7499791bae34798199d51ff25cbca65cb3bc7807804343a_5
+2025-06-20 06:20:38,179 - semgrep.rule_match - DEBUG - match_key = ('', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.avoid_app_run_with_bad_host') match_id = f5a1d78d28043340433dedc0a20165e63b50d9aa4305aede97be74105c8207b5b89db08fa6703decc4ec27aafa081254be07d38814f40c19f447cf4721551845_0
+2025-06-20 06:20:38,180 - semgrep.rule_match - DEBUG - match_key = ('app.run(..., "0.0.0.0", ...) app.run(..., host="0.0.0.0", ...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.avoid_app_run_with_bad_host') match_id = 5c1cbbc54bfaa7420b881ae9f997ad4b5ed5aa16b127a74e037d220112ac891aa501638c0e19641f765822573b5e6f14657485c6b72c0846fdec9bc63200dc57_0
+2025-06-20 06:20:38,180 - semgrep.rule_match - DEBUG - match_key = ('app.run(..., "0.0.0.0", ...) app.run(..., host="0.0.0.0", ...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.avoid_app_run_with_bad_host') match_id = 5c1cbbc54bfaa7420b881ae9f997ad4b5ed5aa16b127a74e037d220112ac891aa501638c0e19641f765822573b5e6f14657485c6b72c0846fdec9bc63200dc57_0
+2025-06-20 06:20:38,181 - semgrep.rule_match - DEBUG - match_key = ('app.run(..., "0.0.0.0", ...) app.run(..., host="0.0.0.0", ...)', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.avoid_app_run_with_bad_host') match_id = 5c1cbbc54bfaa7420b881ae9f997ad4b5ed5aa16b127a74e037d220112ac891aa501638c0e19641f765822573b5e6f14657485c6b72c0846fdec9bc63200dc57_0
+2025-06-20 06:20:38,182 - semgrep.rule_match - DEBUG - match_key = ('', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.debug-enabled') match_id = b9913208c4f66b72b7a155b4eeb6a590f343d1aacbc5d1fe6a121d3d41564b819bf9044baf654c05a16f3e2adfda73af42c34bc8b08ba310e111402a4d0dfecd_0
+2025-06-20 06:20:38,182 - semgrep.rule_match - DEBUG - match_key = ('app.run(..., debug=True, ...) import flask\n...\n', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.debug-enabled') match_id = 8534840212214c3ba91a4f5f45ead1e04df1a524f9b27180e02f65c62b1609f4b9fec30abe76dc5917f09c5ba884874be48bd1a836ec75b61e324cce88b44886_0
+2025-06-20 06:20:38,183 - semgrep.rule_match - DEBUG - match_key = ('app.run(..., debug=True, ...) import flask\n...\n', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.debug-enabled') match_id = 8534840212214c3ba91a4f5f45ead1e04df1a524f9b27180e02f65c62b1609f4b9fec30abe76dc5917f09c5ba884874be48bd1a836ec75b61e324cce88b44886_0
+2025-06-20 06:20:38,183 - semgrep.rule_match - DEBUG - match_key = ('app.run(..., debug=True, ...) import flask\n...\n', PosixPath('main.py'), 'config..semgrep.vendored-rules.python.flask.security.audit.debug-enabled') match_id = 8534840212214c3ba91a4f5f45ead1e04df1a524f9b27180e02f65c62b1609f4b9fec30abe76dc5917f09c5ba884874be48bd1a836ec75b61e324cce88b44886_0
+2025-06-20 06:20:38,185 - semgrep.core_runner - DEBUG - semgrep ran in 0:00:01.758552 on 4 files
+2025-06-20 06:20:38,187 - semgrep.core_runner - DEBUG - findings summary: 8 warning, 0 error, 0 info
+2025-06-20 06:20:38,189 - semgrep.app.auth - DEBUG - Getting API token from settings file
+2025-06-20 06:20:38,189 - semgrep.app.auth - DEBUG - No API token found in settings file
+2025-06-20 06:20:38,309 - semgrep.output - VERBOSE - 
+========================================
+Files skipped:
+========================================
+
+  Always skipped by Opengrep:
+
+   • <none>
+
+  Skipped by .gitignore:
+  (Disable by passing --no-git-ignore)
+
+   • <all files not listed by `git ls-files` were skipped>
+
+  Skipped by .semgrepignore:
+  - https://semgrep.dev/docs/ignoring-files-folders-code/#understand-semgrep-defaults
+
+   • <none>
+
+  Skipped by --include patterns:
+
+   • <none>
+
+  Skipped by --exclude patterns:
+
+   • <none>
+
+  Files skipped due to insufficient read permissions:
+
+   • <none>
+
+  Skipped by limiting to files smaller than 1000000 bytes:
+  (Adjust with the --max-target-bytes flag)
+
+   • <none>
+
+  Partially analyzed due to parsing or internal Opengrep errors
+
+   • <none>
+
+2025-06-20 06:20:38,311 - semgrep.output - INFO - Some files were skipped or only partially analyzed.
+  Scan was limited to files tracked by git.
+
+Ran 488 rules on 4 files: 8 findings.
+2025-06-20 06:20:38,311 - semgrep.app.version - DEBUG - Version cache does not exist
+2025-06-20 06:20:38,331 - semgrep.metrics - VERBOSE - Not sending pseudonymous metrics since metrics are configured to OFF and registry usage is False
